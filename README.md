@@ -45,7 +45,7 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 Please click on the Demo link above.
 
-- What was your experience
+- What was your experience?
 
 For this project, I used Vanilla CSS to master the CSS flexbox.
 
