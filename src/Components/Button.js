@@ -1,9 +1,8 @@
 import React from "react";
-export default function Button(props) {
-  const { text, className, figure, classNam, type, icon } = props;
+export default function Button({ text, className, label, classNam, type, icon }) {
   return (
-    <div className="btn-container">
-      <figure className={classNam}>{figure}</figure>
+    <div className="">
+     <div> <label className={classNam}>{label}</label></div>
       <button className={className} type={type} icon={icon}>
         {" "}
         {icon} {text}
