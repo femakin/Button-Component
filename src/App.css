@@ -11,7 +11,6 @@ body {
 
 .full {
   display: flex;
-
   flex-wrap: wrap;
   height: 100vh;
   max-width: 100%;
@@ -41,11 +40,11 @@ body {
   color: #f7542e;
 }
 
-.mx-auto > ul {
+.mx_auto > ul {
   margin-top: 40px;
 }
 
-.mx-auto > ul > li {
+.mx_auto > ul > li {
   padding: 10px;
   list-style: none;
   font-family: "Noto Sans JP", sans-serif;
@@ -56,8 +55,25 @@ body {
   color: #9e9e9e;
 }
 
-.mx-auto > ul > li:nth-child(4) {
-  color: #090f31;
+.mx_auto > ul > li >a{
+  color: #9e9e9e;
+  text-decoration: none;
+  border: none !important;
+  background-color: #fafbfd !important;
+}
+
+
+
+.nav_input{
+    color: #090F31 !important;
+    outline: none;
+    border: none !important;
+    background-color: #fafbfd !important;
+    list-style: none;
+}
+
+.nav_input:hover{
+  text-decoration: none !important;
 }
 
 .right_content {
@@ -94,13 +110,13 @@ body {
 .eight {
   width: 60%;
 }
-.btn-div {
+.btn_div {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
 }
 
-figure {
+label {
   font-family: "Ubuntu Mono", monospace;
   font-style: normal;
   font-weight: normal;
@@ -248,7 +264,9 @@ figure {
   line-height: 20px;
   text-align: center;
   color: #9e9e9e;
+  cursor: not-allowed !important;
 }
+
 
 .default9 {
   width: 88px;
@@ -262,6 +280,7 @@ figure {
   line-height: 20px;
   text-align: center;
   color: #9e9e9e;
+  cursor: not-allowed !important;
 }
 
 .default10 {
@@ -462,13 +481,13 @@ figure {
     flex-grow: 1;
   }
 
-  .btn-div {
+  .btn_div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  figure {
+  label {
     margin-top: 30px;
   }
 }
@@ -510,4 +529,50 @@ figure {
   .eight {
     width: 34%;
   }
+}
+
+
+ 
+ .span{
+  margin-bottom: 15px;
+  font-family: "Ubuntu Mono", monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  color: #333333;
+ }
+
+
+
+.input1:focus{
+  border: 1px solid #828282;
+  outline: none !important;
+} .input1::placeholder {
+  
+  padding: 12px;
+}
+
+
+
+.search {
+  position: relative;
+  color: #aaa;
+  font-size: 16px;
+}
+
+
+.search input { text-indent: 32px;}
+.search .fa-search { 
+  position: absolute;
+
+}
+
+
+@media (min-width:1280px) and (max-width: 3840px) {
+  .right_content{
+    background-color: #ffffff;
+  }
+
+  
 }
